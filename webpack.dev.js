@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -19,7 +20,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({ template: './assets/index.html' })],
+  plugins: [new ErrorOverlayPlugin(), new MiniCssExtractPlugin(), new HtmlWebpackPlugin({ template: './assets/index.html' })],
   resolve: {
     alias: {
       '@services': path.resolve(__dirname, 'src/services/'),
@@ -27,7 +28,7 @@ module.exports = {
     },
     extensions: ['.ts', '.js', '.json', '.scss']
   },
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-source-map',
   devServer: {
     watchOptions: {
       ignored: /node_modules/

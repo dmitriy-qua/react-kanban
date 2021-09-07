@@ -1,12 +1,9 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 module.exports = {
   mode: 'production',
-  entry: {
-    index: './src/index.js',
-    styles: './src/styles.scss'
-  },
+  entry: './assets/index.js',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
@@ -23,7 +20,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [new ErrorOverlayPlugin(), new MiniCssExtractPlugin()],
   externals: {
     react: 'react',
     'react-dom': 'react-dom',

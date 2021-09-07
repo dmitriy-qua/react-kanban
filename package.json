@@ -31,6 +31,7 @@
     "cross-env": "7.0.2",
     "css-loader": "3.5.3",
     "cypress": "4.12.1",
+    "error-overlay-webpack-plugin": "^1.0.0",
     "eslint": "7.2.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-standard": "14.1.1",
