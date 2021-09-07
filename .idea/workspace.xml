@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="428ea0b5-cf2c-4ba5-8b4d-3183ea111b80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,11 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\1\Desktop\react-kanban\node_modules\prettier" />
     <property name="ts.external.directory.path" value="C:\Users\1\Desktop\react-kanban\node_modules\typescript\lib" />
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="y" />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -42,11 +47,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631015862398</updated>
-      <workItem from="1631015866264" duration="2404000" />
+      <workItem from="1631015866264" duration="2723000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1631018666367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1631018666367" />
   </component>
 </project>
