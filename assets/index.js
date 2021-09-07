@@ -71,6 +71,7 @@ render(
     onColumnRemove={console.log}
     onColumnRename={console.log}
     onCardRemove={console.log}
+    renderColumnFooter={() => <div>ff</div>}
     initialBoard={board}
   />,
   document.getElementById('app')

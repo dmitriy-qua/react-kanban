@@ -59,7 +59,7 @@ function Column({
                 <div className='react-kanban-card-skeleton' />
               )}
             </DroppableColumn>
-            <div>{renderColumnFooter(children)}</div>
+            <div {...columnProvided.dragHandleProps}>{renderColumnFooter(children)}</div>
           </div>
         )
       }}
