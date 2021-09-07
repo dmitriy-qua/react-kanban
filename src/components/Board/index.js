@@ -262,7 +262,7 @@ function BoardContainer({
                 )
               }
               renderColumnFooter={(column) =>
-                renderColumnFooter ? renderColumnFooter(column) : <div></div>
+                renderColumnFooter && renderColumnFooter(column)
               }
               disableColumnDrag={disableColumnDrag}
               disableCardDrag={disableCardDrag}

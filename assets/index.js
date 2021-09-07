@@ -1,16 +1,15 @@
 import { render } from 'react-dom'
 import Board from '../src'
-import getUrlParams from './services/getUrlParams'
 import '../src/styles.scss'
 
 const board = {
   columns: [
     {
-      id: '0206c8d7-4d48-4d97-b867-86fc2d21074d',
+      id: 0,
       title: 'Column Backlog',
       cards: [
         {
-          id: '0206c8d7-4d48-4d97-b867-86fc2d21075d',
+          id: 0,
           title: 'Card title 1',
           description: 'Card content',
         },
@@ -67,12 +66,20 @@ const board = {
 
 render(
   <Board
-    {...getUrlParams()}
     onColumnRemove={console.log}
     onColumnRename={console.log}
     onCardRemove={console.log}
-    renderColumnFooter={() => <div>ff</div>}
-    initialBoard={board}
-  />,
+    renderColumnHeader={({title, cards, id}) => {
+      return <div>{title}</div>
+    }}
+    renderColumnFooter={({id}) => {
+      return <div>{id}</div>
+    }}
+    renderCard={({id}) => {
+      return <div>{id}</div>
+    }}
+  >
+    {board}
+  </Board>,
   document.getElementById('app')
 )

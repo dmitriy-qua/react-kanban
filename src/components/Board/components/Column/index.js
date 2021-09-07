@@ -38,6 +38,7 @@ function Column({
               verticalAlign: 'top',
               ...columnProvided.draggableProps.style,
             }}
+            key={children.id}
             className='react-kanban-column'
             data-testid={`column-${children.id}`}
           >
