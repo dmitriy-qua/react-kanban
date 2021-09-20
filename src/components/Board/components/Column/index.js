@@ -59,7 +59,7 @@ function Column({
                 <div className='react-kanban-card-skeleton' />
               )}
               {/*<div {...columnProvided.dragHandleProps}>{renderColumnFooter(children)}</div>*/}
-              {renderColumnFooter && <Draggable draggableId={String(children.id)} index={children.cards.length} isDragDisabled>
+              {renderColumnFooter(children) && <Draggable draggableId={String(children.id)} index={children.cards.length} isDragDisabled>
                 {(provided) => {
                   return (
                     <div
