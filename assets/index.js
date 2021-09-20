@@ -1,5 +1,6 @@
 import { render } from 'react-dom'
 import Board from '../src'
+import getUrlParams from './services/getUrlParams'
 import '../src/styles.scss'
 
 const board = {
@@ -66,20 +67,11 @@ const board = {
 
 render(
   <Board
+    {...getUrlParams()}
     onColumnRemove={console.log}
     onColumnRename={console.log}
     onCardRemove={console.log}
-    renderColumnHeader={({title, cards, id}) => {
-      return <div>{title}</div>
-    }}
-    renderColumnFooter={({id}) => {
-      return <div>{id}</div>
-    }}
-    renderCard={({id}) => {
-      return <div>{id}</div>
-    }}
-  >
-    {board}
-  </Board>,
+    initialBoard={board}
+  />,
   document.getElementById('app')
 )
