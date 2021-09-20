@@ -38,7 +38,6 @@ function Column({
               verticalAlign: 'top',
               ...columnProvided.draggableProps.style,
             }}
-            key={children.id}
             className='react-kanban-column'
             data-testid={`column-${children.id}`}
           >
@@ -59,8 +58,8 @@ function Column({
               ) : (
                 <div className='react-kanban-card-skeleton' />
               )}
+              <div {...columnProvided.dragHandleProps}>{renderColumnFooter(children)}</div>
             </DroppableColumn>
-            <div {...columnProvided.dragHandleProps}>{renderColumnFooter(children)}</div>
           </div>
         )
       }}
