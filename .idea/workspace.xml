@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="428ea0b5-cf2c-4ba5-8b4d-3183ea111b80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/components/Column/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/components/Column/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,7 @@
       <updated>1631015862398</updated>
       <workItem from="1631015866264" duration="8236000" />
       <workItem from="1632132017814" duration="1092000" />
-      <workItem from="1632133469880" duration="5008000" />
+      <workItem from="1632133469880" duration="7341000" />
     </task>
     <servers />
   </component>

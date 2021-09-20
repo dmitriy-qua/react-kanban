@@ -261,9 +261,9 @@ function BoardContainer({
                   </DefaultColumnHeader>
                 )
               }
-              renderColumnFooter={(column) =>
-                renderColumnFooter && renderColumnFooter(column)
-              }
+              renderColumnFooter={renderColumnFooter ? (column) => {
+                return renderColumnFooter && renderColumnFooter(column)
+              } : null}
               disableColumnDrag={disableColumnDrag}
               disableCardDrag={disableCardDrag}
               onCardNew={onCardNew}

@@ -58,7 +58,21 @@ function Column({
               ) : (
                 <div className='react-kanban-card-skeleton' />
               )}
-              <div {...columnProvided.dragHandleProps}>{renderColumnFooter(children)}</div>
+              {/*<div {...columnProvided.dragHandleProps}>{renderColumnFooter(children)}</div>*/}
+              {renderColumnFooter && <Draggable draggableId={String(children.id)} index={children.cards.length} isDragDisabled>
+                {(provided) => {
+                  return (
+                    <div
+                      ref={provided.innerRef}
+                      {...provided.draggableProps}
+                      {...provided.dragHandleProps}
+                      data-testid={`card-${children.id}`}
+                    >
+                      <div style={{ display: 'inline-block', whiteSpace: 'normal' }}>{renderColumnFooter(children)}</div>
+                    </div>
+                  )
+                }}
+              </Draggable>}
             </DroppableColumn>
           </div>
         )

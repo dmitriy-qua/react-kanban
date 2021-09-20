@@ -52,7 +52,7 @@ const board = {
       ],
     },
     {
-      id: 2,
+      id: 1,
       title: 'Column Doing',
       cards: [
         {
