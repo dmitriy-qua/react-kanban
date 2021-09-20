@@ -73,7 +73,7 @@ render(
       return <div>{title}</div>
     }}
     renderColumnFooter={({id}) => {
-      return <div>{id} fff</div>
+      return <div>{id}</div>
     }}
     renderCard={({id}) => {
       return <div>{id}</div>
